@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for SentiNexuls */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111827;
+  color: #ffffff;
+}
+
+/* Subtle glow for critical alerts */
+.bg-red-900\/40.border-red-700 {
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.4);
+}
+
+.bg-orange-900\/40.border-orange-700 {
+  box-shadow: 0 0 15px rgba(249, 115, 22, 0.4);
+}
+
+/* Custom gradient for DID Marketplace agent cards hover effect */
+.group:hover .bg-gradient-to-br {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Loading states */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #374151;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6b7280;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+} 
