@@ -1,1 +1,39 @@
-{ "sample": true } 
+{
+  "intel_sweep": {
+    "dark_web_chatter": [
+      {
+        "source": "ExploitForum123",
+        "post_title": "New SCADA zero-day - affecting regional grids",
+        "content_snippet": "Confirmed working payload for firmware v2.18 on Siemens substations. DM for sample."
+      },
+      {
+        "source": "ZeroLeakz",
+        "post_title": "Selling access to energy control panels (East Coast)",
+        "content_snippet": "Got creds for legacy HMIs in Florida. $500 per login."
+      }
+    ],
+    "osint_articles": [
+      {
+        "headline": "Outdated control firmware still used in 30% of US substations",
+        "source": "TechSec Weekly",
+        "published": "2025-05-28"
+      }
+    ],
+    "regulatory_alerts": [
+      {
+        "title": "NERC Critical Update",
+        "summary": "All regional energy providers must patch CVE-2025-19304 within 30 days or risk compliance fines.",
+        "published": "2025-06-01"
+      }
+    ]
+  },
+  "target_metadata": {
+    "region": "Florida-East",
+    "substation_ids": ["FL-GRID-204", "FL-GRID-207"],
+    "firmware_versions": {
+      "FL-GRID-204": "v2.18",
+      "FL-GRID-207": "v2.19"
+    },
+    "last_patch_check": "2025-05-01"
+  }
+} 
