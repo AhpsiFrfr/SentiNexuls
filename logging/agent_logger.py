@@ -1,0 +1,1 @@
+# Handles smart-contract-compatible logging 
