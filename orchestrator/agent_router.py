@@ -15,7 +15,7 @@ from agents.vuln_detect_agent import VulnDetectAgent
 from agents.impact_agent import ImpactAgent
 from agents.alert_agent import AlertAgent
 from simulation.scenario_runner import simulate_breach
-from logging.agent_logger import log_event
+from sentinexuls_logging.agent_logger import log_event
 from config.vault_config import vault_metadata
 from utils.vault_interface import initialize_vault, get_vault_context
 from utils.did_resolver import resolve_did, create_did_context

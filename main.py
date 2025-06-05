@@ -6,7 +6,7 @@ import os
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from orchestrator.agent_router import run_agent_pipeline
-from logging.agent_logger import log_event
+from sentinexuls_logging.agent_logger import log_event
 
 def load_input(file_path: str = "data/example_input.json") -> dict:
     """

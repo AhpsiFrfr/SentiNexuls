@@ -4,7 +4,7 @@ import time
 import random
 from datetime import datetime
 from agents.sim_agent import SimAgent
-from logging.agent_logger import log_event
+from sentinexuls_logging.agent_logger import log_event
 
 def simulate_breach(vuln_data: dict, metadata: dict) -> dict:
     """

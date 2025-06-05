@@ -13,12 +13,13 @@ import os
 import asyncio
 
 # Add project root to path for imports
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, project_root)
 
 from orchestrator.agent_router import run_agent_pipeline
 from simulation.scenario_runner import simulate_breach, run_advanced_simulation, run_scenario_suite
 from config.vault_config import vault_metadata, get_vault_metadata, is_vault_active
-from logging.agent_logger import log_event
+from sentinexuls_logging.agent_logger import log_event
 
 # Initialize router
 router = APIRouter()
